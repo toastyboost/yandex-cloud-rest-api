@@ -1,0 +1,22 @@
+{
+  "name": "serverless-node-api",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "build": "tsc -p .",
+    "deploy-production": "npm run build && npx --no-install serverless deploy --stage production",
+    "deploy-development": "npm run build && npx --no-install serverless deploy --stage development"
+  },
+  "license": "MIT",
+  "node": ">=14.16",
+  "dependencies": {
+    "node-fetch": "^2.2.10"
+  },
+  "devDependencies": {
+    "@yandex-cloud/serverless-plugin": "^1.1.0",
+    "serverless": "^3.21.0",
+    "serverless-dotenv-plugin": "^4.0.1",
+    "typescript": "^4.7.4"
+  }
+}
