@@ -7,11 +7,9 @@ Template for deploying a Node.js rest api to Yandex Cloud Funcions with Serverle
 - yandex-cli
 
 ```
-touch .env.development .env.production
+touch .env.dev .env.prod
 ```
 
 ## commands
 
 ## todo
-
-- изменить название рейтингов

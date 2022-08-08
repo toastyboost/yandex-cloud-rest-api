@@ -5,8 +5,8 @@
   "type": "module",
   "scripts": {
     "build": "tsc -p .",
-    "deploy-production": "npm run build && npx --no-install serverless deploy --stage production",
-    "deploy-development": "npm run build && npx --no-install serverless deploy --stage development"
+    "deploy-prod": "npm run build && npx --no-install serverless deploy --stage prod",
+    "deploy-dev": "npm run build && npx --no-install serverless deploy --stage dev"
   },
   "license": "MIT",
   "node": ">=14.16",
